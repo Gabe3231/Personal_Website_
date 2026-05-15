@@ -550,12 +550,23 @@ footer {
 }
 
 .projects-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  overflow: hidden;
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.projects-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.projects-list::-webkit-scrollbar-thumb {
+  background: var(--border2);
+  border-radius: 2px;
+}
+
+.projects-list::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 .project-item {
