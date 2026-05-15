@@ -550,9 +550,17 @@ footer {
 }
 
 .projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+
+  border: 1px solid var(--border);
+  border-radius: 4px;
+
   max-height: 500px;
   overflow-y: auto;
   overflow-x: hidden;
+
   position: relative;
 }
 
